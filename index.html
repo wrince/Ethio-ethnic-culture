@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Ethnic Groups & Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ethiopian Ethnic Groups</h1>
+        <select id="ethnicSelect" onchange="showDefinition()">
+            <option value="">Select an ethnic group</option>
+        </select>
+        <p id="definition"></p>
+    </div>
+
+    <div class="dictionary">
+        <h2>Dictionary</h2>
+        <input type="text" id="searchWord" placeholder="Enter a word">
+        <button onclick="fetchDefinition()">Search</button>
+        <p id="dictionaryResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
